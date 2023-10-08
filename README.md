@@ -50,31 +50,19 @@ Use encryption for storing sensitive data.
 Employ measures to prevent cheating, such as browser lockdown during exams.
 Notifications:
 
-Send notifications to students and teachers about upcoming exams, results, etc.
-Accessibility:
+Send notifications to students and teachers about upcoming exams, results, etc..
 
-Ensure the system is accessible to users with disabilities.
-Mobile Responsiveness:
-
-Design the system to be responsive for various devices, especially mobile phones and tablets.
-Backup and Recovery:
-
-Regularly back up data to prevent loss.
-Have a system for recovering data in case of a failure.
-User Support:
-
-Provide help documentation and support for users.
 Technologies:
 Frontend:
 
 HTML, CSS, JavaScript
-Frameworks like React, Angular, or Vue.js
+Frameworks like Express
 Backend:
 
-Node.js, Python (Django, Flask), Ruby on Rails, PHP (Laravel)
+Node.js, Python (Django, Flask)
 Database:
 
-MySQL, PostgreSQL, MongoDB
+SQLITE3
 Authentication:
 
 JWT (JSON Web Tokens), OAuth

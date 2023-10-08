@@ -1,79 +1,88 @@
-# Open_Source
-Designing an online examination system involves several components and considerations. Below is a general guide on how you might approach building an online examination system.
+Welcome to Rocker's Bakery
 
-System Components:
-User Authentication and Authorization:
+Introduction
+1.1 About Our shop
+1.2 Mission Statement
+1.3 Contact Information
 
-Implement a secure login system for administrators, teachers, and students.
-Use role-based access control to define permissions for different user types.
-User Management:
+Products and Services
+2.1 Breads
+2.2 Pastries
+2.3 Cakes
+2.4 Custom Orders
 
-Allow administrators to add, edit, and remove users.
-Students and teachers should have their profiles with necessary information.
-Exam Creation:
+Operating Hours
+3.1 Regular Business Hours
+3.2 Holiday Hours
 
-Provide an interface for teachers/administrators to create exams.
-Specify exam details, such as duration, number of questions, and question types.
-Support various question types (multiple choice, true/false, essay, etc.).
-Question Bank:
+Ordering Information
+4.1 In-Store Purchases
+4.2 Online Orders
+4.3 Custom Orders
 
-Maintain a database of questions categorized by subject and difficulty.
-Allow for the addition and editing of questions.
-Randomization:
+Special Events and Promotions
+5.1 Seasonal Specials
+5.2 Loyalty Program
+5.3 Catering Services
 
-Implement the ability to randomize the order of questions and answer choices to prevent cheating.
-Exam Scheduling:
+1. Introduction
+1.1 About HomeBakery
+Welcome to Rocker's Home Bakery where we bake memories! Established in [Year], we take pride in offering freshly baked goods crafted with passion and quality ingredients.
 
-Enable the scheduling of exams for specific dates and times.
-Allow for the setting of time limits for each exam.
-Real-time Monitoring:
+1.2 Mission Statement
+At our shop, our mission is to delight our customers with mouthwatering treats, create a warm and inviting atmosphere, and contribute positively to the community.
 
-Implement features for real-time monitoring during exams to detect any suspicious behavior.
-Record and log user activities during the exam.
-Scoring and Evaluation:
+1.3 Contact Information
+Address: Kalyan-West,Mumbai
+Phone: 895-345-1785
+Email: Rockers678@gmail.com
 
-Automatically grade objective-type questions.
-Provide a manual grading system for subjective questions.
-Calculate and display scores instantly after completion.
-Result and Analysis:
+2. Products and Services
+2.1 Breads
+Indulge in the aroma of our freshly baked bread, made with love and expertise. Choose from a variety of options, including artisanal loaves, baguettes, and specialty breads.
 
-Show detailed results to students after completing the exam.
-Provide analytics and reports to teachers/administrators for further analysis.
-Feedback System:
+2.2 Pastries
+Satisfy your sweet tooth with our delectable pastries. From flaky croissants to fruit-filled danishes, we offer a tempting array of pastries to please every palate.
 
-Allow students to provide feedback on the exam.
-Enable teachers to provide feedback on individual questions.
-Security:
+2.3 Cakes
+Celebrate life's special moments with our custom-designed cakes. Whether it's a birthday, wedding, or any other occasion, we create cakes that are as beautiful as they are delicious.
 
-Implement secure connections (HTTPS).
-Use encryption for storing sensitive data.
-Employ measures to prevent cheating, such as browser lockdown during exams.
-Notifications:
+2.4 Custom Orders
+Have a specific craving or a special event coming up? Place a custom order, and let us create a unique culinary experience tailored to your preferences.
 
-Send notifications to students and teachers about upcoming exams, results, etc..
+3. Operating Hours
+3.1 Regular Business Hours
+Monday to Friday: 10:00 am. - 21:00 p.m.
+Saturday: Closed
+Sunday: Closed
 
-Technologies:
-Frontend:
+5. Ordering Information
+4.1 In-Store Purchases
+Visit us at Rocker.com to explore our wide selection of freshly baked goods. Our friendly staff is always ready to assist you.
 
-HTML, CSS, JavaScript
-Frameworks like Express
-Backend:
+4.2 Online Orders
+For the convenience of our customers, we offer online ordering through our website at  above site. Browse our menu, place your order, and pick it up at the shop.
 
-Node.js, Python (Django, Flask)
-Database:
+4.3 Custom Orders
+Planning a special event? Contact us in advance to discuss your custom order requirements. We're here to make your celebrations memorable.
 
-SQLITE3
-Authentication:
+5. Special Events and Promotions
+5.1 Seasonal Specials
+Stay tuned for our seasonal specials, featuring unique flavors and limited-time offerings. Follow us on social media for updates.
 
-JWT (JSON Web Tokens), OAuth
-Real-time Monitoring:
+5.2 Loyalty Program
+Join our loyalty program to earn rewards with every purchase. It's our way of saying thank you for being a valued part of the family.
 
-WebSockets or Server-Sent Events
-Security:
+5.3 Catering Services
+Make your gatherings extra special with our catering services. From corporate events to weddings, we provide delicious treats that leave a lasting impression.
 
-HTTPS, Encryption (SSL/TLS), Cross-Site Scripting (XSS) prevention
+6. Community Engagement
+6.1 Local Partnerships
+We believe in supporting our community. Explore our partnerships with local farmers and suppliers, ensuring that our ingredients are fresh, sustainable, and of the highest quality.
+
+6.2 Charitable Initiatives
+We are committed to giving back. Learn more about our charitable initiatives and how you can be a part of making a positive impact in our community.
 
 
 
-
-
+Thank you for choosing our services. We look forward to serving you soon!

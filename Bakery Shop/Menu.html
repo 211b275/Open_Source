@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(Images/logo.svg);
+            color: #333;
+        }
+
+        header {
+            background-color: #653413;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        #menu {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        #item-details {
+            margin-top: 20px;
+            display: none;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        button {
+            background-color: #59a4a3;
+            color: #9a0814;
+            padding: 10px;
+            border: none;
+            text-align: center;
+            cursor: pointer;
+        }
+
+    </style>
+    <title>Menu</title>
+</head>
+<body>
+    <header>
+        <header>
+            <h1>Rocker's Bakery</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><button><i>Home</i></button></a></li>
+                </ul>
+            </nav>
+        </header>
+    
+    </header>
+
+    <section id="menu">
+        <h2>Menu</h2>
+        <ul id="menu-list">
+            <li data-id="1" onclick="showDetails(1)">Hot Chocolate Cake with Whisp Cream - $10.00</li>
+            <li data-id="2" onclick="showDetails(2)">Muffin Roll - $100</li>
+            <li data-id="3" onclick="showDetails(3)">Cinnamon Roll - $45.50</li>
+            <li data-id="4" onclick="showDetails(4)">BlueBerry Cake - $15</li>
+            <li data-id="5" onclick="showDetails(5)">Pineapple Cake - $20</li>
+            <li data-id="6" onclick="showdetails(6)">Apple-Cheese Cake - $30</button></li>
+            <li data-id="7" onclick="showDetails(7)">Vanilla-Ice Cake - $80</li>
+            <li data-id="8" onclick="showDetails(8)">Kancha Cake with petha flavour - $220</li>
+            <li data-id="9" onclick="showDetails(9)">Mixed fruits Cake - $120</li>
+        </ul>
+        
+        <div id="item-details"></div>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2023 Apki apni dukan</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+        const menuList = document.getElementById('menu-list');
+        const itemDetails = document.getElementById('item-details');
+
+        function showDetails(itemId) {
+            // Simulating fetching details from a server or database
+            const details = getItemDetails(itemId);
+
+            // Display details
+            itemDetails.innerHTML = `<h3>${details.name} - $${details.price.toFixed(2)}</h3>
+                                    <p>${details.description}</p>`;
+            
+            // Show the details section
+            itemDetails.style.display = 'block';
+        }
+
+        // Function to fetch item details (replace with actual data retrieval logic)
+        function getItemDetails(itemId) {
+            switch (itemId) {
+                case 1:
+                    return { name: 'Hot Chocolate Cake with Whisp Cream', price: 10.00, description: 'Decadent chocolate cake with layers of rich frosting.' };
+                case 2:
+                    return { name: 'Muffin Roll', price: 100, description: 'Moist blueberry muffin with a hint of cinnamon.' };
+                case 3:
+                    return { name: 'Cinnamon Roll', price: 45.50, description: 'Soft and gooey cinnamon roll topped with sweet icing.' };
+                case 4:
+                    return { name: 'BluBerry Cake', price: 15.00, description: 'Nourished with a osum taste of bluberries' };
+                case 5:
+                    return { name: 'Pineapple Cake', price: 20.00, description: 'Almed with a gorgeous laplace of pineapple' };
+                case 6:
+                    return { name: 'Apple-Cheese Cake', price: 30.00, description: 'A new made mixture of cheese with most trusted fruit by doctors also.'};
+                case 7:
+                    return { name: 'Vanilla Ice Cake', price: 80.00, desription: 'Ice-cream cake a new tradtion started.'};
+                case 8:
+                    return { name: 'Kancha-Cake with petha flavour', price: 220.00, description: 'A cake with afloavour of petha making it a osum bond with all.'};   
+                case 9: 
+                    return { name: 'Mixed Fruit Cake', price: 120.00, description: 'On going common so not very much'};
+                default:
+                    return { name: 'Item not found', price: 0, description: 'Sorry, details not available.' };
+            }
+        }
+    });
+
+    </script>
+</body>
+</html>

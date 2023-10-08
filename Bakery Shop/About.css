@@ -1,0 +1,66 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    text-decoration: dotted;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-image: url("C:\\Users\\saart\\OneDrive\\Desktop\\PROJECT\\Bakery Shop\\Images\\separator.svg");
+}
+
+#about-us {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(98, 194, 25, 0.1);
+}
+
+#about-us h2, #about-us h3 {
+    color: #80131b;
+}
+
+#about-us p {
+    line-height: 1.9;
+}
+
+button {
+    background-color: #73077c;
+    color: #f7c33f;
+    padding: 10px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+#additional-info {
+    margin-top: 20px;
+    display: none;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 10px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav ul {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav li {
+        display: block;
+        flex-direction: column-reverse;
+        margin: 10px 0;
+    }
+
+    #about-us {
+        padding: 20px;
+    }
+}

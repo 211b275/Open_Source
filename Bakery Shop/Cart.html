@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body 
+        {
+            font-family: 'Times', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(Images/img-pattern.svg);
+            
+        }
+
+        .container 
+        {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-image: url(Images/shape-6.png);
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        section 
+        {
+            flex: 1;
+            margin: 10px;
+        }
+
+        h2 
+        {
+            color: #ab2424;
+        }
+
+        ul 
+        {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li 
+        {
+            border: 1px solid #500808;
+            padding: 10px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        button 
+        {
+            background-color: #c5d1d1;
+            color: #c13535;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        button:hover 
+        {
+            background-color: #920725;
+        }
+
+        .cart 
+        {
+            order: -1; /* Move the cart to the left for small screens */
+        }
+
+        @media only screen and (max-width: 769px) 
+        {
+            .container 
+            {
+                flex-direction: column;
+            }
+        }
+
+    </style>
+    <title>Shopping Cart</title>
+</head>
+<body>
+    <div class="container">
+        <section class="products">
+            <h2>Products</h2>
+            <ul id="product-list">
+                <li data-id="1">Hot Chocolate Cake with Whisp Cream  - $10<button onclick="addToCart(1)">Add to Cart</button></li>
+                <li data-id="2">BlueBerry Cake - $15<button onclick="addToCart(2)">Add to Cart</button></li>
+                <li data-id="3">Pineapple Cake - $20<button onclick="addToCart(3)">Add to Cart</button></li>
+                <li data-id="4">Apple-Cheese Cake - $30<button onclick="addToCart(4)">Add to Cart</button></li>
+                <li data-id="5">Vanilla-Ice Cake - $80<button onclick="addToCart(5)">Add to Cart</button></li>
+                <li data-id="6">Kancha Cake with petha flavour - $220<button onclick="addToCart(6)">Add to Cart</button></li>
+                <li data-id="7">Mixed fruits Cake - $120<button onclick="addToCart(7)">Add to Cart</button></li>
+                <li data-id="8">Muffin Roll - $100<button onclick="addToCart(8)">Add to Cart</button></li>
+            </ul>
+        </section>
+
+        <section class="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-list"></ul>
+            <p>Total: $<span id="total-price">0.00</span></p>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
